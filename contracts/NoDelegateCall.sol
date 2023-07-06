@@ -12,6 +12,7 @@ abstract contract NoDelegateCall {
     constructor() {
         // Immutables are computed in the init code of the contract, and then inlined into the deployed bytecode.
         // In other words, this variable won't change when it's checked at runtime.
+        // Add some comment here as a test
         original = address(this);
     }
 
